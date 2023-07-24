@@ -11,6 +11,7 @@ class gen{
         string ch; //chars
     public:
         gen();
+        gen(string u_ch);
 };
 
 #endif
