@@ -9,5 +9,5 @@ int main(){
     cout<<"enter chars:";
     cin>>ch;
 
-    gen generate(ch)
+    gen generate(ch);
 }
