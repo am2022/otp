@@ -9,5 +9,10 @@ int main(){
     cout<<"enter chars:";
     cin>>ch;
 
-    gen generate(ch);
+    if(ch == "std-all"){
+        gen generate();
+    }
+    else{
+        gen generate(ch);
+    }
 }
