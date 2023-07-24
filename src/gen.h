@@ -8,7 +8,9 @@ using namespace std;
 
 class gen{
     private:
+        string ch; //chars
     public:
+        gen();
 };
 
 #endif
