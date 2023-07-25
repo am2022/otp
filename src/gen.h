@@ -15,7 +15,7 @@ class gen{
         gen();
         gen(string u_ch);
         int set_pass_len(int u_pass_len);
-        string password(int pass_len);
+        string password();
 };
 
 #endif
