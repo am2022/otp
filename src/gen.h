@@ -11,7 +11,7 @@ class gen{
     private:
         string ch; //chars
         int pass_len;
-        string password;
+        string o_password;
     public:
         gen();
         gen(string u_ch);
