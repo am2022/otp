@@ -14,7 +14,7 @@ class gen{
     public:
         gen();
         gen(string u_ch);
-        void set_pass_len(int u_pass_len);
+        int set_pass_len(int u_pass_len);
         string password(int pass_len);
 };
 
