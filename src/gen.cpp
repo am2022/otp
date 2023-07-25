@@ -16,3 +16,14 @@ int gen::set_pass_len(int u_pass_len){
         return 0;
     }
 }
+
+string gen::password(){
+    srand(time(0));
+    int ch_len = ch.length();
+
+    for(int i = 0;i < this->pass_len;i++){
+        this->o_password[i] = this->ch[rand()%ch_len];
+    }
+
+    return this->o_password;
+}
