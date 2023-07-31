@@ -25,4 +25,6 @@ int main(){
     }
     
     generate.set_pass_len(i_pass_length);
+    string password = generate.password();
+    cout<<"password: "<<password;
 }
