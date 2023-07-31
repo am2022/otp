@@ -15,4 +15,14 @@ int main(){
 
     cout<<"ente length of password:";
     cin>>pass_length;
+    int i_pass_length;
+
+    try{
+        i_pass_length = stoi(pass_length);
+    }
+    catch(exception& e){
+        cerr << "enter a number!" << '\n';
+    }
+    
+    generate.set_pass_len(i_pass_length);
 }
