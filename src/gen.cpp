@@ -24,11 +24,15 @@ int gen::set_pass_len(int u_pass_len){
 
 string gen::password(){
     srand(time(0));
-    int ch_len = ch.length();
+    int ch_len = this->ch.length();
+    string pass;
 
     for(int i = 0;i < this->pass_len;i++){
-        this->o_password[i] = this->ch[rand()%ch_len];
+        int j = rand()%ch_len;
+        pass += this->ch[j];
     }
 
-    return this->o_password;
+    this->o_password = pass;
+
+    return pass;
 }
