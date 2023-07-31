@@ -5,7 +5,12 @@ gen::gen(){
 }
 
 gen::gen(string u_ch){
-    this->ch = u_ch;
+    if(u_ch == "std-all"){
+        gen();
+    }
+    else{
+        this->ch = u_ch;
+    }
 }
 
 int gen::set_pass_len(int u_pass_len){
