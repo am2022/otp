@@ -5,6 +5,7 @@ using namespace std;
 
 int main(){
     string ch; //to get characters
+    string pass_length;
 
     cout<<"enter chars:";
     cin>>ch;
@@ -15,4 +16,7 @@ int main(){
     else{
         gen generate(ch);
     }
+
+    cout<<"ente length of password:";
+    cin>>pass_length;
 }
