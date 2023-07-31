@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 #include "gen.cpp"
 
 using namespace std;
@@ -10,12 +11,7 @@ int main(){
     cout<<"enter chars:";
     cin>>ch;
 
-    if(ch == "std-all"){
-        gen generate();
-    }
-    else{
-        gen generate(ch);
-    }
+    gen generate(ch);
 
     cout<<"ente length of password:";
     cin>>pass_length;
