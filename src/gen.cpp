@@ -1,9 +1,5 @@
 #include "gen.h"
 
-gen::gen(){
-    this->ch = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*";
-}
-
 gen::gen(string u_ch){
     if(u_ch == "std-all"){
         this->ch = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*";
