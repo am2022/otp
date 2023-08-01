@@ -9,6 +9,7 @@ using namespace std;
 
 #ifdef _WIN32
 #include <windows.h>
+#define Sleep(x) Sleep((x)*1000)
 #else
 #include <unistd.h>
 #define Sleep(x) usleep((x)*1000000)
