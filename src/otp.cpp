@@ -43,6 +43,6 @@ int main(){
     }
     else{
         generate.expire_time(i_expire_time);
-        cout<<"password expired!";
+        cout<<"\npassword expired!";
     }
 }
