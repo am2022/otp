@@ -32,3 +32,7 @@ string gen::password(){
 
     return pass;
 }
+
+void gen::expire_time(int time){
+
+}
