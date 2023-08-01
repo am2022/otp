@@ -7,6 +7,7 @@ using namespace std;
 int main(){
     string ch; //to get characters
     string pass_length;
+    string expire_time;
 
     cout<<"enter chars:";
     cin>>ch;
@@ -23,8 +24,20 @@ int main(){
     catch(exception& e){
         cerr << "enter a number!" << '\n';
     }
+
+    cout<<"enter expire time in second(enter 0 for unlimited expire time):";
+    cin>>expire_time;
     
     generate.set_pass_len(i_pass_length);
     string password = generate.password();
     cout<<"password: "<<password;
+
+    int i_expire_time = stoi(expire_time);
+    if(i_expire_time == 0){
+        return 0;
+    }
+    else{
+        generate.expire_time(i_expire_time);
+        cout<<"password expired!";
+    }
 }
