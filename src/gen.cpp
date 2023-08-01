@@ -34,5 +34,5 @@ string gen::password(){
 }
 
 void gen::expire_time(int time){
-
+    Sleep(time);
 }
