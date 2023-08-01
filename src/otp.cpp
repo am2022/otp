@@ -27,6 +27,11 @@ int main(){
 
     cout<<"enter expire time in second(enter 0 for unlimited expire time):";
     cin>>expire_time;
+
+    if(stoi(expire_time) < 0){
+        cout<<"invalid input!";
+        return 0;
+    }
     
     generate.set_pass_len(i_pass_length);
     string password = generate.password();
