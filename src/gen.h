@@ -7,6 +7,13 @@
 
 using namespace std;
 
+#ifdef _WIN32
+#include <windows.h>
+#else
+#include <unistd.h>
+#define Sleep(x) usleep((x)*1000000)
+#endif
+
 class gen{
     private:
         string ch; //chars
