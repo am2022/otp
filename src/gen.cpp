@@ -6,7 +6,7 @@ gen::gen(){
 
 gen::gen(string u_ch){
     if(u_ch == "std-all"){
-        gen();
+        this->ch = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*";
     }
     else{
         this->ch = u_ch;
