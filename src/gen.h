@@ -16,6 +16,7 @@ class gen{
         gen(string u_ch);
         int set_pass_len(int u_pass_len);
         string password();
+        void expire_time(int time);
 };
 
 #endif
